@@ -1,0 +1,10 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+<%=@question%>
+<%=@answer%>
+<%= link_to "Anything Else?", ask_path %>
+
+<form action="/answer">
+  <input type="text" name="questions">
+  <input type="submit" value="Ask!">
+</form>
